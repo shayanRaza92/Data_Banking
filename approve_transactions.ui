@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+
+  <property name="geometry">
+   <rect><x>0</x><y>0</y><width>800</width><height>520</height></rect>
+  </property>
+
+  <property name="windowTitle">
+   <string>Approve Transfers</string>
+  </property>
+
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QVBoxLayout">
+
+    <!-- Title -->
+    <item>
+     <widget class="QLabel" name="labelTitle">
+      <property name="text"><string>Pending Transfers</string></property>
+      <property name="alignment"><set>Qt::AlignCenter</set></property>
+      <property name="font"><font><bold>true</bold><pointsize>18</pointsize></font></property>
+     </widget>
+    </item>
+
+    <!-- Table -->
+    <item>
+     <widget class="QTableWidget" name="tableTransfers"/>
+    </item>
+
+    <!-- Buttons -->
+    <item>
+     <layout class="QHBoxLayout">
+      <item>
+       <widget class="QPushButton" name="btnApprove">
+        <property name="text"><string>Approve</string></property>
+       </widget>
+      </item>
+
+      <item>
+       <widget class="QPushButton" name="btnReject">
+        <property name="text"><string>Reject</string></property>
+       </widget>
+      </item>
+     </layout>
+    </item>
+
+    <item>
+     <widget class="QPushButton" name="btnBack">
+      <property name="text"><string>Back</string></property>
+     </widget>
+    </item>
+
+   </layout>
+  </widget>
+
+ </widget>
+</ui>

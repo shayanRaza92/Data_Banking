@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect><x>0</x><y>0</y><width>520</width><height>380</height></rect>
+  </property>
+  <property name="windowTitle">
+   <string>Data Banking – Welcome</string>
+  </property>
+
+  <widget class="QWidget" name="centralwidget">
+
+   <!-- Modern Green Theme -->
+
+
+   <layout class="QVBoxLayout" name="mainLayout">
+
+    <!-- Title -->
+    <item>
+     <widget class="QLabel" name="titleLabel">
+      <property name="text">
+       <string>Welcome to Data Banking</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+     </widget>
+    </item>
+
+    <!-- Spacer -->
+    <item>
+     <spacer name="spacerTop">
+      <property name="orientation"><enum>Qt::Vertical</enum></property>
+      <property name="sizeHint" stdset="0">
+       <size><width>20</width><height>30</height></size>
+      </property>
+     </spacer>
+    </item>
+
+    <!-- Login Button -->
+    <item>
+     <widget class="QPushButton" name="btnLogin">
+      <property name="text"><string>Login</string></property>
+      <property name="minimumHeight"><number>45</number></property>
+     </widget>
+    </item>
+
+    <!-- Register Button -->
+    <item>
+     <widget class="QPushButton" name="btnRegister">
+      <property name="text"><string>Register New User</string></property>
+      <property name="minimumHeight"><number>45</number></property>
+     </widget>
+    </item>
+
+    <!-- Bottom Spacer -->
+    <item>
+     <spacer name="spacerBottom">
+      <property name="orientation"><enum>Qt::Vertical</enum></property>
+      <property name="sizeHint" stdset="0">
+       <size><width>20</width><height>40</height></size>
+      </property>
+     </spacer>
+    </item>
+
+   </layout>
+  </widget>
+ </widget>
+
+ <resources/>
+ <connections/>
+</ui>

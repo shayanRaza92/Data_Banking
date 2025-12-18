@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect><x>0</x><y>0</y><width>450</width><height>450</height></rect>
+  </property>
+
+  <property name="windowTitle">
+   <string>Apply for Loan</string>
+  </property>
+
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QVBoxLayout">
+
+    <!-- Title -->
+    <item>
+     <widget class="QLabel" name="labelTitle">
+      <property name="text"><string>Apply for Loan</string></property>
+      <property name="alignment"><set>Qt::AlignCenter</set></property>
+      <property name="font">
+       <font><bold>true</bold><pointsize>20</pointsize></font>
+      </property>
+     </widget>
+    </item>
+
+    <!-- Loan Account Selection -->
+    <item>
+     <widget class="QLabel" name="labelAccount">
+      <property name="text"><string>Select Loan Account:</string></property>
+      <property name="font"><font><bold>true</bold></font></property>
+     </widget>
+    </item>
+
+    <item>
+     <widget class="QComboBox" name="loanAccountCombo"/>
+    </item>
+
+    <!-- Amount Input -->
+    <item>
+     <widget class="QLineEdit" name="amountInput">
+      <property name="placeholderText"><string>Enter Loan Amount</string></property>
+     </widget>
+    </item>
+
+    <!-- Reason Input -->
+    <item>
+     <widget class="QTextEdit" name="reasonInput">
+      <property name="placeholderText"><string>Enter Reason for Loan Application</string></property>
+     </widget>
+    </item>
+
+    <!-- Apply Button -->
+    <item>
+     <widget class="QPushButton" name="btnApply">
+      <property name="text"><string>Apply</string></property>
+      <property name="minimumHeight"><number>45</number></property>
+     </widget>
+    </item>
+
+    <!-- Back Button -->
+    <item>
+     <widget class="QPushButton" name="btnBack">
+      <property name="text"><string>Back</string></property>
+      <property name="minimumHeight"><number>40</number></property>
+     </widget>
+    </item>
+
+   </layout>
+  </widget>
+
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x><y>0</y><width>420</width><height>300</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Create Bank Account</string>
+  </property>
+
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QVBoxLayout">
+
+    <!-- Title -->
+    <item>
+     <widget class="QLabel" name="label">
+      <property name="text">
+       <string>Create Account</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+      <property name="font">
+       <font><bold>true</bold><pointsize>20</pointsize></font>
+      </property>
+     </widget>
+    </item>
+
+    <!-- Normal Account Button -->
+    <item>
+     <widget class="QPushButton" name="btnNormal">
+      <property name="text">
+       <string>Create Normal Account</string>
+      </property>
+      <property name="minimumHeight">
+       <number>45</number>
+      </property>
+     </widget>
+    </item>
+
+    <!-- Loan Account Button -->
+    <item>
+     <widget class="QPushButton" name="btnLoan">
+      <property name="text">
+       <string>Create Loan Account</string>
+      </property>
+      <property name="minimumHeight">
+       <number>45</number>
+      </property>
+     </widget>
+    </item>
+
+    <!-- Back Button -->
+    <item>
+     <widget class="QPushButton" name="btnBack">
+      <property name="text">
+       <string>Back</string>
+      </property>
+      <property name="minimumHeight">
+       <number>40</number>
+      </property>
+     </widget>
+    </item>
+
+   </layout>
+  </widget>
+
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

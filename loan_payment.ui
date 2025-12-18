@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect><x>0</x><y>0</y><width>520</width><height>420</height></rect>
+  </property>
+  <property name="windowTitle">
+   <string>Loan Payment</string>
+  </property>
+
+  <widget class="QWidget" name="centralwidget">
+
+   <!-- GREEN MODERN THEME -->
+
+
+   <layout class="QVBoxLayout" name="mainLayout">
+
+    <!-- Title -->
+    <item>
+     <widget class="QLabel" name="labelTitle">
+      <property name="text"><string>Loan Payment</string></property>
+      <property name="alignment"><set>Qt::AlignCenter</set></property>
+     </widget>
+    </item>
+
+    <!-- Spacer -->
+    <item>
+     <spacer name="space1">
+      <property name="orientation"><enum>Qt::Vertical</enum></property>
+      <property name="sizeHint"><size><width>20</width><height>20</height></size></property>
+     </spacer>
+    </item>
+
+    <!-- Source Account Selection -->
+    <item>
+     <widget class="QComboBox" name="sourceAccountCombo">
+      <property name="minimumHeight"><number>40</number></property>
+      <item><property name="text"><string>Select Source Account</string></property></item>
+     </widget>
+    </item>
+
+    <!-- Loan Account Selection -->
+    <item>
+     <widget class="QComboBox" name="loanAccountCombo">
+      <property name="minimumHeight"><number>40</number></property>
+      <item><property name="text"><string>Select Loan Account</string></property></item>
+     </widget>
+    </item>
+
+    <!-- Payment Amount -->
+    <item>
+     <widget class="QLineEdit" name="amountInput">
+      <property name="placeholderText"><string>Enter Payment Amount</string></property>
+      <property name="minimumHeight"><number>40</number></property>
+     </widget>
+    </item>
+
+    <!-- Pay Loan Button -->
+    <item>
+     <widget class="QPushButton" name="btnPay">
+      <property name="text"><string>Pay Loan</string></property>
+      <property name="minimumHeight"><number>45</number></property>
+     </widget>
+    </item>
+
+    <!-- Back Button -->
+    <item>
+     <widget class="QPushButton" name="btnBack">
+      <property name="text"><string>Back</string></property>
+      <property name="minimumHeight"><number>45</number></property>
+     </widget>
+    </item>
+
+    <!-- Spacer -->
+    <item>
+     <spacer name="spaceBottom">
+      <property name="orientation"><enum>Qt::Vertical</enum></property>
+      <property name="sizeHint"><size><width>20</width><height>30</height></size></property>
+     </spacer>
+    </item>
+
+   </layout>
+
+  </widget>
+ </widget>
+
+ <resources/>
+ <connections/>
+</ui>

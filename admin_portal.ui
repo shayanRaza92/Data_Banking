@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+
+  <property name="geometry">
+   <rect><x>0</x><y>0</y><width>500</width><height>500</height></rect>
+  </property>
+
+  <property name="windowTitle">
+   <string>Admin Portal</string>
+  </property>
+
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QVBoxLayout">
+
+    <!-- Title -->
+    <item>
+     <widget class="QLabel" name="labelTitle">
+      <property name="text"><string>Admin Portal</string></property>
+      <property name="alignment"><set>Qt::AlignCenter</set></property>
+      <property name="font"><font><pointsize>20</pointsize><bold>true</bold></font></property>
+     </widget>
+    </item>
+
+    <!-- Buttons -->
+    <item><widget class="QPushButton" name="btnApproveUsers"><property name="text"><string>Approve Users</string></property></widget></item>
+    <item><widget class="QPushButton" name="btnViewUsers"><property name="text"><string>View Users</string></property></widget></item>
+    <item><widget class="QPushButton" name="btnDeleteUsers"><property name="text"><string>Deactivate Users</string></property></widget></item>
+    <item><widget class="QPushButton" name="btnApproveLoan"><property name="text"><string>Approve Loans</string></property></widget></item>
+
+    <!-- Accountant buttons -->
+    <item><widget class="QPushButton" name="btnViewTransactions"><property name="text"><string>View Transactions</string></property></widget></item>
+
+    <!-- NEW BUTTON for Accountant -->
+    <item><widget class="QPushButton" name="btnApproveTransactions"><property name="text"><string>Approve Transactions</string></property></widget></item>
+
+    <!-- Back -->
+    <item><widget class="QPushButton" name="btnBack"><property name="text"><string>Back</string></property></widget></item>
+
+   </layout>
+  </widget>
+
+ </widget>
+</ui>

@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect><x>0</x><y>0</y><width>500</width><height>380</height></rect>
+  </property>
+  <property name="windowTitle">
+   <string>User Login – Data Banking</string>
+  </property>
+
+  <widget class="QWidget" name="centralwidget">
+
+   <!-- GREEN THEME -->
+
+
+   <layout class="QVBoxLayout" name="mainLayout">
+
+    <!-- Title -->
+    <item>
+     <widget class="QLabel" name="titleLabel">
+      <property name="text"><string>User Login</string></property>
+      <property name="alignment"><set>Qt::AlignCenter</set></property>
+     </widget>
+    </item>
+
+    <item>
+     <spacer name="spacer1">
+      <property name="orientation"><enum>Qt::Vertical</enum></property>
+      <property name="sizeHint" stdset="0">
+       <size><width>20</width><height>20</height></size>
+      </property>
+     </spacer>
+    </item>
+
+    <!-- Inputs -->
+    <item><widget class="QLineEdit" name="emailInput"><property name="placeholderText"><string>Email</string></property></widget></item>
+    <item><widget class="QLineEdit" name="passwordInput"><property name="placeholderText"><string>Password</string></property><property name="echoMode"><enum>QLineEdit::Password</enum></property></widget></item>
+
+    <!-- Login Button -->
+    <item>
+     <widget class="QPushButton" name="btnLogin">
+      <property name="text"><string>Login</string></property>
+      <property name="minimumHeight"><number>40</number></property>
+     </widget>
+    </item>
+
+    <!-- Back Button -->
+    <item>
+     <widget class="QPushButton" name="btnBack">
+      <property name="text"><string>Back</string></property>
+      <property name="minimumHeight"><number>40</number></property>
+     </widget>
+    </item>
+
+    <item>
+     <spacer name="spacerBottom">
+      <property name="orientation"><enum>Qt::Vertical</enum></property>
+      <property name="sizeHint" stdset="0">
+       <size><width>20</width><height>30</height></size>
+      </property>
+     </spacer>
+    </item>
+
+   </layout>
+  </widget>
+ </widget>
+
+ <resources/>
+ <connections/>
+</ui>

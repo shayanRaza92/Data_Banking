@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect><x>0</x><y>0</y><width>420</width><height>360</height></rect>
+  </property>
+
+  <property name="windowTitle">
+   <string>Deposit Money</string>
+  </property>
+
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QVBoxLayout">
+
+    <!-- Title -->
+    <item>
+     <widget class="QLabel" name="labelTitle">
+      <property name="text"><string>Deposit Money</string></property>
+      <property name="alignment"><set>Qt::AlignCenter</set></property>
+      <property name="font">
+       <font><bold>true</bold><pointsize>20</pointsize></font>
+      </property>
+     </widget>
+    </item>
+
+    <!-- Account Selection Label -->
+    <item>
+     <widget class="QLabel" name="labelAccountHeading">
+      <property name="text"><string>Select Account:</string></property>
+      <property name="font"><font><bold>true</bold><pointsize>12</pointsize></font></property>
+     </widget>
+    </item>
+
+    <!-- Account ComboBox -->
+    <item>
+     <widget class="QComboBox" name="accountCombo">
+      <property name="minimumHeight"><number>35</number></property>
+     </widget>
+    </item>
+
+    <!-- Amount Input -->
+    <item>
+     <widget class="QLineEdit" name="amountInput">
+      <property name="placeholderText"><string>Enter Amount to Deposit</string></property>
+     </widget>
+    </item>
+
+    <!-- Deposit Button -->
+    <item>
+     <widget class="QPushButton" name="btnDeposit">
+      <property name="text"><string>Deposit</string></property>
+      <property name="minimumHeight"><number>40</number></property>
+     </widget>
+    </item>
+
+    <!-- Back Button -->
+    <item>
+     <widget class="QPushButton" name="btnBack">
+      <property name="text"><string>Back</string></property>
+      <property name="minimumHeight"><number>40</number></property>
+     </widget>
+    </item>
+
+   </layout>
+  </widget>
+
+ </widget>
+
+ <resources/>
+ <connections/>
+</ui>
